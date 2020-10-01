@@ -356,4 +356,9 @@ export const ActionContainer = styled.div`
 export const ItemContainer = styled.div`
   display: flex;
   padding-top: 20px;
+  @media (max-width: 360px) {
+    ${IconContainer} {
+      width: 40px;
+      height: 30px;
+  }
 `

@@ -32,8 +32,8 @@ export default () => {
             <ActivityContainer>
               <ItemContainer>
                 <IconContainer
-                  width={60}
-                  height={45}
+                  width={50}
+                  height={40}
                   margin={20}>
                   <ActionIcon />
                 </IconContainer>
@@ -47,8 +47,8 @@ export default () => {
               </ItemContainer>
               <ItemContainer>
                 <IconContainer
-                  width={60}
-                  height={45}
+                  width={50}
+                  height={40}
                   margin={20}>
                   <ActionIcon />
                 </IconContainer>
@@ -78,8 +78,8 @@ export default () => {
             <ActivityContainer>
               <ItemContainer>
                 <IconContainer
-                  width={60}
-                  height={45}
+                  width={50}
+                  height={40}
                   margin={20}>
                   <ActionIcon />
                 </IconContainer>
@@ -94,8 +94,8 @@ export default () => {
               </ItemContainer>
               <ItemContainer>
                 <IconContainer
-                  width={60}
-                  height={45}
+                  width={50}
+                  height={40}
                   margin={20}>
                   <ActionIcon />
                 </IconContainer>
