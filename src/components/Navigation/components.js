@@ -7,6 +7,7 @@ export const NavigationContainer = styled.div`
   flex-direction: column;
   background: #000000 0% 0% no-repeat padding-box;
 `
+
 export const IconContainer = styled.div`
   width: ${props => props.width}px;
   height: ${props => props.height}px;
@@ -148,6 +149,7 @@ export const MenuItem = styled.button`
   border: none;
   background: none;
   padding-left: 30px;
+  color: #ffffff;
   :hover {
     border-left-color: #ffc200;
     border-left-width: 5px;
@@ -208,4 +210,10 @@ export const Links = styled(NavLink)`
   text-decoration: none;
   font-size: 14px;
   color: #ffffff;
+`
+export const Humburger = styled.input`
+  display: none;
+  @media (max-width: 880px) {
+    display: block;
+  }
 `

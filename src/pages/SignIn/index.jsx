@@ -1,4 +1,5 @@
 import React from 'react'
+
 import {
   Form,
   FormContainer,
@@ -23,22 +24,18 @@ export default () => {
         </li>
         <li>
           <label htmlFor="email">Email</label>
-          <Input
-            type="email"
-            name="email"
-            id="email" />
+          <Input type="email" name="email" id="email" />
         </li>
         <li>
           <label htmlFor="password">Password</label>
           <Input
             type="password"
             name="password"
-            id="password" />
+            id="password"
+          />
         </li>
         <li>
-          <SibmitButton type="submit">
-            Sign In
-          </SibmitButton>
+          <SibmitButton type="submit">Sign In</SibmitButton>
         </li>
       </FormContainer>
     </Form>

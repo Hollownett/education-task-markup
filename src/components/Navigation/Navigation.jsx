@@ -1,4 +1,5 @@
 import React from 'react'
+
 import {
   NavigationContainer,
   TopContainer,
@@ -27,11 +28,13 @@ import {
   Invite,
   InviteLink,
   Links,
+  Humburger,
+  menuToggle,
 } from './components'
 
 function Navigation() {
   return (
-    <NavigationContainer>
+    <NavigationContainer className="Navigation">
       <TopContainer>
         <IconContainer width={22} height={20}>
           <CheckListIcon />
@@ -69,64 +72,58 @@ function Navigation() {
       </TasksContainer>
       <MenuContainer>
         <MenuTitle>MENU</MenuTitle>
-        <MenuItem>
-          <Links exact to="/home">
-            Home
-          </Links>
-        </MenuItem>
-        <MenuItem>
-          <Links exact to="">
-            My Tasks
-          </Links>
-        </MenuItem>
-        <MenuItem>
-          <Links exact to="">
-            Notifications
-          </Links>
-        </MenuItem>
+        <Links exact to="/home">
+          <MenuItem>Home</MenuItem>
+        </Links>
+        <Links exact to="">
+          <MenuItem>My Tasks</MenuItem>
+        </Links>
+        <Links exact to="">
+          <MenuItem>Notifications</MenuItem>
+        </Links>
       </MenuContainer>
       <MenuContainer>
         <MenuTitle>PROJECTS</MenuTitle>
-        <MenuItem>
-          <MenuItemContainer>
-            <IconContainer width={20} height={20}>
-              <MenuItemIcon />
-            </IconContainer>
-            <Links exact to="">
+        <Links exact to="">
+          <MenuItem>
+            <MenuItemContainer>
+              <IconContainer width={20} height={20}>
+                <MenuItemIcon />
+              </IconContainer>
               Dashboard UI Kit
-            </Links>
-          </MenuItemContainer>
-        </MenuItem>
-        <MenuItem>
-          <MenuItemContainer>
-            <IconContainer width={20} height={20}>
-              <MenuItemIcon />
-            </IconContainer>
-            <Links exact to="">
+            </MenuItemContainer>
+          </MenuItem>
+        </Links>
+        <Links exact to="">
+          <MenuItem>
+            <MenuItemContainer>
+              <IconContainer width={20} height={20}>
+                <MenuItemIcon />
+              </IconContainer>
               CRM System
-            </Links>
-          </MenuItemContainer>
-        </MenuItem>
-        <MenuItem>
-          <MenuItemContainer>
-            <IconContainer width={20} height={20}>
-              <MenuItemIcon />
-            </IconContainer>
-            <Links exact to="/boards">
+            </MenuItemContainer>
+          </MenuItem>
+        </Links>
+        <Links exact to="/boards">
+          <MenuItem>
+            <MenuItemContainer>
+              <IconContainer width={20} height={20}>
+                <MenuItemIcon />
+              </IconContainer>
               Website Redesign
-            </Links>
-          </MenuItemContainer>
-        </MenuItem>
-        <MenuItem>
-          <MenuItemContainer>
-            <IconContainer width={20} height={20}>
-              <MenuItemIcon />
-            </IconContainer>
-            <Links exact to="/">
+            </MenuItemContainer>
+          </MenuItem>
+        </Links>
+        <Links exact to="/">
+          <MenuItem>
+            <MenuItemContainer>
+              <IconContainer width={20} height={20}>
+                <MenuItemIcon />
+              </IconContainer>
               Communication Tool
-            </Links>
-          </MenuItemContainer>
-        </MenuItem>
+            </MenuItemContainer>
+          </MenuItem>
+        </Links>
         <AddProjectButton>+ Add a Project</AddProjectButton>
       </MenuContainer>
       <InviteContainer>

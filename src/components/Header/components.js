@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
+import 'normalize.css'
+
 export const Header = styled.div`
   width: 100%;
   height: 117px;
@@ -12,6 +14,12 @@ export const Header = styled.div`
   background: #ffffff 0% 0% no-repeat padding-box;
   padding-right: 30px;
   padding-left: 30px;
+  @media (max-width: 360px) {
+    padding-left: 5px;
+  }
+  @media (max-width: 880px) {
+    height: fit-content;
+  }
 `
 
 export const HederTitle = styled.h1`
@@ -36,17 +44,27 @@ export const Links = styled(NavLink)`
   font-size: 16px;
   color: #131313;
   padding-right: 15px;
+  @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+    padding-right: 5px;
+  }
+  @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+    padding-right: 5px;
+  }
+  @media (max-width: 880px) {
+    padding-right: 10px;
+  }
 `
 
 export const LinksContainer = styled.div`
-padding-top: 20px;
+  padding-top: 20px;
 `
 export const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
 `
 export const HeaderContainer = styled.div`
-display:flex;
+  display: flex;
+  align-items: center;
 `
 
 export const IconContainer = styled.div`
@@ -64,8 +82,12 @@ export const TitleIcon = styled.div`
 `
 
 export const ParticipantsContainer = styled.div`
-  display:flex;
+  display: flex;
   flex-direction: row;
+  @media (max-width: 505px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export const ParticipantIcon = styled.div`
@@ -80,5 +102,8 @@ export const ParticipantQty = styled.p`
   font-size: 12px;
   font-weight: normal;
   letter-spacing: 0px;
-  color: #9B9B9B;
+  color: #9b9b9b;
+  @media (max-width: 505px) {
+    font-size: 10px;
+  }
 `

@@ -8,12 +8,11 @@ export const Form = styled.div`
   flex-direction: column;
   align-items: center;
 
-  padding: 143px;
-  margin-bottom: 20px;
+  padding-top: 7%;
 `
 
 export const FormContainer = styled.ul`
-  width: 505px;
+  width: 25rem;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -21,18 +20,21 @@ export const FormContainer = styled.ul`
   border-radius: 8px;
   align-items: center;
   list-style-type: none;
-  padding: 80px 20px 80px 20px;
+  padding: 3em 1em;
   li {
     display: flex;
     flex-direction: column;
   }
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
 `
 export const FormTitle = styled.h1`
-   margin-bottom: 80px;
+  margin-bottom: 80px;
 `
 
 export const Input = styled.input`
-  width: 445px;
+  width: 20em;
   height: 50px;
   font-size: 18px;
   background: #eaeaea 0% 0% no-repeat padding-box;
@@ -41,14 +43,14 @@ export const Input = styled.input`
   border-radius: 8px;
   padding: 20px 13px;
   margin-bottom: 20px;
-  &::hover{
+  &::hover {
     outline: none;
     box-shadow: none;
   }
 `
 
 export const SibmitButton = styled.button`
-  width: 255px;
+  width: 20em;
   height: 50px;
   font-size: 14px;
   background: #cef9c6 0% 0% no-repeat padding-box;
@@ -58,7 +60,7 @@ export const SibmitButton = styled.button`
   margin-top: 25px;
 `
 export const Bio = styled.input`
-  width: 445px;
+  width: 20em;
   height: 100px;
   font-size: 18px;
   outline: none;
@@ -66,13 +68,13 @@ export const Bio = styled.input`
   border-color: transparent;
   border-radius: 8px;
   padding: 20px 13px;
-  &::hover{
+  &::hover {
     outline: none;
     box-shadow: none;
   }
 `
 export const HoeizontalLine = styled.hr`
   border-color: #eaeaea;
-  width: 445px;
+  width: 20em;
   margin-bottom: 50px;
 `

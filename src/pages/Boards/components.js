@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 
+import 'normalize.css'
 
 export const IconContainer = styled.div`
   width: ${props => props.width}px;
   height: ${props => props.height}px;
   margin-right: ${props =>
-        props.margin ? props.margin : 0}px;
+    props.margin ? props.margin : 0}px;
 `
 
 export const CardTitle = styled.p`
@@ -19,6 +20,18 @@ export const CardContainer = styled.div`
   width: 95%;
   display: flex;
   margin: 30px;
+  @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+    display: block;
+    margin: 10px;
+  }
+  @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+    display: block;
+    margin: 10px;
+  }
+  @media (max-width: 880px) {
+    display: block;
+    margin: 10px;
+  }
 `
 
 export const TodayTasks = styled.div`
@@ -27,6 +40,21 @@ export const TodayTasks = styled.div`
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 8px 8px 0px 0px;
   margin-right: 30px;
+  @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+  @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+  @media (max-width: 880px) {
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
 `
 export const TodayTasksContainer = styled.div`
   padding: 30px;

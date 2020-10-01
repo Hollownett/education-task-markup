@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
-
+import { normalize } from 'styled-normalize'
 export default createGlobalStyle`
+ ${normalize}
+ 
  @font-face {
     font-family: "Heebo";
     src: url('../public/fonts/Heebo/Heebo-VariableFont_wght.ttf');

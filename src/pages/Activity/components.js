@@ -1,11 +1,10 @@
 import styled from 'styled-components'
 
-
 export const IconContainer = styled.div`
   width: ${props => props.width}px;
   height: ${props => props.height}px;
   margin-right: ${props =>
-        props.margin ? props.margin : 0}px;
+    props.margin ? props.margin : 0}px;
 `
 
 export const CardContainer = styled.div`
@@ -52,7 +51,7 @@ export const ActionTime = styled.div`
   letter-spacing: 0px;
   color: #131313;
   opacity: 0.7;
-  margin-left: 45%;
+  margin-left: 5%;
 `
 export const ActionText = styled.p`
   text-align: left;

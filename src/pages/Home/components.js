@@ -18,6 +18,19 @@ export const CardContainer = styled.div`
   width: 95%;
   display: flex;
   margin: 30px;
+  @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+    display: block;
+    margin: 10px;
+    margin-top: 30px;
+  }
+  @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+    display: block;
+    margin: 10px;
+    margin-top: 30px;
+  }
+  @media (max-width: 830px) {
+    display: block;
+  }
 `
 export const TaskContainer = styled.div`
   width: 100%;
@@ -29,7 +42,15 @@ export const TaskContainer = styled.div`
 export const RateContainer = styled.div`
   display: flex;
   flex-direction: row;
-  column-gap: 30px;
+  column-gap: 3%;
+  @media (max-width: 360px) {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  @media (max-width: 360px) {
+    flex-direction: column;
+    margin-top: 10px;
+  }
 `
 
 export const CompletedTasks = styled.div`
@@ -46,10 +67,27 @@ export const Activity = styled.div`
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 8px;
   padding: 30px;
+  @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+    width: 100%;
+    margin-top: 30px;
+    height: fit-content;
+  }
+  @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+    width: 100%;
+    margin-top: 30px;
+    height: fit-content;
+  }
+  @media (max-width: 830px) {
+    width: 100%;
+    margin-top: 30px;
+    height: fit-content;
+  }
 `
 export const WorkingRate = styled.div`
   width: 100%;
   height: 296px;
+  display: flex;
+  flex-direction: column;
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 8px;
   text-align: center;
@@ -170,6 +208,20 @@ export const WorkingRateText = styled.p`
   position: absolute;
   line-height: 3.7;
   width: 27%;
+
+  @media (min-width: 2560px) {
+    width: 29%;
+  }
+  @media (max-width: 1360px) {
+    width: 25%;
+  }
+  @media (max-width: 830px) {
+    width: 43%;
+  }
+
+  @media (max-width: 360px) {
+    width: 100%;
+  }
 `
 
 export const PerformanceRateTitle = styled.p`
@@ -179,6 +231,9 @@ export const PerformanceRateTitle = styled.p`
   letter-spacing: 0px;
   color: #131313;
   margin-top: 30px;
+  @media (max-width: 439px) {
+    margin-bottom: 35px;
+  }
 `
 export const PerformanceRateText = styled.p`
   text-align: center;
@@ -189,6 +244,20 @@ export const PerformanceRateText = styled.p`
   position: absolute;
   line-height: 3.7;
   width: 27%;
+
+  @media (min-width: 2560px) {
+    width: 29%;
+  }
+  @media (max-width: 1360px) {
+    width: 25%;
+  }
+  @media (max-width: 830px) {
+    width: 43%;
+  }
+
+  @media (max-width: 360px) {
+    width: 100%;
+  }
 `
 export const CardTitle = styled.p`
   text-align: left;
@@ -229,7 +298,7 @@ export const Day = styled.p`
 `
 
 export const ActivityContainer = styled.div`
-  width: 290px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 80%;
