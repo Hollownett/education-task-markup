@@ -35,18 +35,13 @@ import {
 
 function Navigation() {
   const [open, setOpen] = useState(false)
-  const node = useRef()
-  const menuId = 'main-menu'
-
-  const isExpanded = open ? true : false
+  const setOpenMenu = () => {
+    setOpen(!open)
+  }
 
   return (
     <React.Fragment>
-      <StyledBurger
-        aria-label="Toggle menu"
-        aria-expanded={isExpanded}
-        open={open}
-        onClick={() => setOpen(!open)}>
+      <StyledBurger open={open} onClick={setOpenMenu}>
         <span />
         <span />
         <span />

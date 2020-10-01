@@ -297,6 +297,15 @@ export const CompletedTasksChart = styled.div`
   height: 100%;
   background-image: url('../../../public/icons/graph.svg');
   background-size: cover;
+  @media (max-width: 770px) {
+    width: 66%;
+  }
+  @media (max-width: 600px) {
+    width: 85%;
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 `
 export const CompletedTasksChartContainer = styled.div`
   display: flex;
@@ -304,6 +313,30 @@ export const CompletedTasksChartContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-top: 50px;
+
+  @media (max-width: 880px) {
+    ${CompletedTasksQty} {
+      font-size: 80px;
+    }
+    ${IconContainer} {
+      width: 55%;
+      height: 190px;
+      margin-right: 0px;
+    }
+  }
+  @media (max-width: 420px) {
+    ${CompletedTasksQty} {
+      font-size: 50px;
+    }
+    ${IconContainer} {
+      width: 51%;
+      height: 143px;
+      margin-right: 0px;
+    }
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
 `
 export const ActivityTitle = styled.h2``
 

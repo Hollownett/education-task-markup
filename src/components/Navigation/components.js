@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
+import { PageContainer } from '@/layouts'
 
 export const NavigationContainer = styled.div`
   width: 270px;
