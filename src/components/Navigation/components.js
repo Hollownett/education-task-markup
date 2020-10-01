@@ -211,9 +211,3 @@ export const Links = styled(NavLink)`
   font-size: 14px;
   color: #ffffff;
 `
-export const Humburger = styled.input`
-  display: none;
-  @media (max-width: 880px) {
-    display: block;
-  }
-`

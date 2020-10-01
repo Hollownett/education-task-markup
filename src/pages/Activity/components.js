@@ -79,6 +79,9 @@ export const CommentContainer = styled.div`
   justify-content: center;
   margin-top: 5%;
   margin-bottom: 30%;
+  @media (max-width: 360px) {
+    margin-top: 15%;
+  }
 `
 export const CommentText = styled.p`
   width: 50%;

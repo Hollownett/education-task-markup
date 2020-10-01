@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-import 'normalize.css'
-
 export const IconContainer = styled.div`
   width: ${props => props.width}px;
   height: ${props => props.height}px;
