@@ -18,15 +18,7 @@ export const CardContainer = styled.div`
   width: 95%;
   display: flex;
   margin: 30px;
-  @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-    display: block;
-    margin: 10px;
-  }
-  @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-    display: block;
-    margin: 10px;
-  }
-  @media (max-width: 880px) {
+  @media (max-width: 1200px) {
     display: block;
     margin: 10px;
   }
@@ -48,7 +40,7 @@ export const TodayTasks = styled.div`
     margin-right: 0px;
     margin-top: 30px;
   }
-  @media (max-width: 880px) {
+  @media (max-width: 1200px) {
     width: 100%;
     margin-right: 0px;
     margin-top: 30px;

@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
-import 'normalize.css'
-
 export const Header = styled.div`
   width: 100%;
   height: 117px;
@@ -65,6 +63,18 @@ export const TitleContainer = styled.div`
 export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
+  @media (max-width: 880px) {
+    padding-left: 20px;
+  }
+  @media (max-width: 630px) {
+    ${IconContainer} {
+      width: 0px;
+      height: fit-content;
+    }
+  }
+  @media (max-width: 360px) {
+    padding-left: 50px;
+  }
 `
 
 export const IconContainer = styled.div`

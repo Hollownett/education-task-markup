@@ -2,6 +2,8 @@ import React from 'react'
 
 import {
   Header as AppHeader,
+  TitleContainer,
+  HeaderContainer,
   HederTitle,
   AddButton,
 } from './components'
@@ -9,7 +11,11 @@ import {
 function Header(props) {
   return (
     <AppHeader>
-      <HederTitle>{props.headerTitle}</HederTitle>
+      <TitleContainer>
+        <HeaderContainer>
+          <HederTitle>{props.headerTitle}</HederTitle>
+        </HeaderContainer>
+      </TitleContainer>
       <AddButton>+Add</AddButton>
     </AppHeader>
   )

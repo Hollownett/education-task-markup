@@ -6,6 +6,13 @@ export const NavigationContainer = styled.div`
   display: flex;
   flex-direction: column;
   background: #000000 0% 0% no-repeat padding-box;
+
+  @media (max-width: 876px) {
+    position: absolute;
+    z-index: 1;
+    transform: ${({ open }) =>
+      open ? 'translateX(0)' : 'translateX(-100%)'};
+  }
 `
 
 export const IconContainer = styled.div`
@@ -22,6 +29,11 @@ export const TopContainer = styled.div`
   flex-direction: row;
   align-items: center;
   margin: 30px;
+  @media (max-width: 876px) {
+    ${IconContainer} {
+      display: none;
+    }
+  }
 `
 
 export const SearchIcon = styled.div`
@@ -37,6 +49,9 @@ export const Title = styled.div`
   letter-spacing: 0px;
   color: #ffffff;
   padding-left: 13px;
+  @media (max-width: 876px) {
+    padding-left: 43px;
+  }
 `
 
 export const CheckListIcon = styled.div`
@@ -210,4 +225,48 @@ export const Links = styled(NavLink)`
   text-decoration: none;
   font-size: 14px;
   color: #ffffff;
+`
+// Burger  button for mobile
+
+export const StyledBurger = styled.button`
+  position: absolute;
+  top: 25px;
+  left: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+  span {
+    width: 2rem;
+    height: 0.25rem;
+    background: ${({ open }) =>
+      open ? '#ffffff' : '#000000'};
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+    :first-child {
+      transform: ${({ open }) =>
+        open ? 'rotate(45deg)' : 'rotate(0)'};
+    }
+    :nth-child(2) {
+      opacity: ${({ open }) => (open ? '0' : '1')};
+      transform: ${({ open }) =>
+        open ? 'translateX(20px)' : 'translateX(0)'};
+    }
+    :nth-child(3) {
+      transform: ${({ open }) =>
+        open ? 'rotate(-45deg)' : 'rotate(0)'};
+    }
+  }
+  @media (max-width: 876px) {
+    display: flex;
+  }
 `

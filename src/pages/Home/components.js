@@ -12,6 +12,7 @@ export const IconContainer = styled.div`
   height: ${props => props.height}px;
   margin-right: ${props =>
     props.margin ? props.margin : 0}px;
+  }
 `
 
 export const CardContainer = styled.div`
@@ -28,7 +29,7 @@ export const CardContainer = styled.div`
     margin: 10px;
     margin-top: 30px;
   }
-  @media (max-width: 830px) {
+  @media (max-width: 1200px) {
     display: block;
   }
 `
@@ -46,10 +47,9 @@ export const RateContainer = styled.div`
   @media (max-width: 360px) {
     flex-direction: column;
     margin-top: 10px;
-  }
-  @media (max-width: 360px) {
-    flex-direction: column;
-    margin-top: 10px;
+    div {
+      margin-bottom: 10px;
+    }
   }
 `
 
@@ -77,7 +77,7 @@ export const Activity = styled.div`
     margin-top: 30px;
     height: fit-content;
   }
-  @media (max-width: 830px) {
+  @media (max-width: 1200px) {
     width: 100%;
     margin-top: 30px;
     height: fit-content;
@@ -119,12 +119,24 @@ export const TodayTaskContainer = styled.div`
   border-radius: 10px;
   margin-top: 20px;
   padding: 30px;
+  @media (max-width: 700px) {
+    padding: 10px;
+  }
+  }
 `
 export const TaskIcon = styled.div`
   width: 100%;
   height: 100%;
   background-image: url('../../../public/icons/checked-box.svg');
   background-size: cover;
+
+  @media (max-width: 430px) {
+    width: 150%;
+  }
+
+  @media (max-width: 360px) {
+    width: 200%;
+  }
 `
 export const Task = styled.div`
   display: flex;
@@ -215,10 +227,13 @@ export const WorkingRateText = styled.p`
   @media (max-width: 1360px) {
     width: 25%;
   }
-  @media (max-width: 830px) {
-    width: 43%;
+  @media (max-width: 1200px) {
+    width: 35%;
   }
 
+  @media (max-width: 880px) {
+    width: 43%;
+  }
   @media (max-width: 360px) {
     width: 100%;
   }
@@ -251,7 +266,11 @@ export const PerformanceRateText = styled.p`
   @media (max-width: 1360px) {
     width: 25%;
   }
-  @media (max-width: 830px) {
+  @media (max-width: 1200px) {
+    width: 35%;
+  }
+
+  @media (max-width: 880px) {
     width: 43%;
   }
 
@@ -302,6 +321,10 @@ export const ActivityContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 80%;
+  @media (max-width: 1200px) {
+    display: block;
+    margin-bottom: 0px;
+  }
 `
 export const ActionIcon = styled.div`
   width: 100%;
